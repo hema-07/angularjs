@@ -1,0 +1,8 @@
+<md-card id="card" *ngFor="let a of moviesName">
+    <md-card-header>
+        <md-card-title>{{a.Title}}</md-card-title>
+        <md-card-subtitle>{{a.Year}}</md-card-subtitle>
+    </md-card-header>
+     <img md-card-image src="{{a.Poster}}">
+  </md-card>
+ 
