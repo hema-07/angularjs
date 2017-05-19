@@ -8,6 +8,6 @@ export class MoviesService {
   constructor(private http: Http) {}
   searchMovie(movieName: string) {
     return this.http.get('http://www.omdbapi.com/?s=' + movieName)
-               .map(response => response.json().['Search']);
+               .map(response => response.json() ['Search']);
   }
 }
